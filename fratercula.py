@@ -11,8 +11,9 @@ class Fratercula:
         self.growth = growth                      # Рост
         self.year_of_birth = year_of_birth        # Год рождения
         self.habitat = habitat                    # Среда обитания
-        self.id = uuid.uuid4()                     # Уникальный идентификатор
+        self.id = id.uuid4()                      # Уникальный идентификатор
 
     def age(self, year_of_birth):
         date = datetime.now()
         return date.year - year_of_birth
+
